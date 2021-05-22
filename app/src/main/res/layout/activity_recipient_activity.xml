@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recipient_activity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/BloodRed">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="40dp"
+    android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_tehsil"
+        android:hint="TEHSIL"
+        android:textColorHint="@color/BloodRed"
+        android:textColor="@color/BloodRed"
+        android:layout_marginTop="20dp"/>
+    <AutoCompleteTextView
+        android:completionThreshold="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_bloodgrp"
+        android:hint="BLOOD GROUP:"
+        android:textColorHint="@color/BloodRed"
+        android:textColor="@color/BloodRed"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_search"
+        android:text="search"
+        android:textSize="20dp"
+        android:background="@color/gold"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"/>
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/chip_nav"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        app:cnb_menuResource="@menu/bloodtype"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>

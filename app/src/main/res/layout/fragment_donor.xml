@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DonorFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<!--this is for, asking to be donor. Only visible if user is not a donor-->
+    <RelativeLayout
+        android:id="@+id/notAdonorLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/beAdonorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="be a donor"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/allRequestLL"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/request_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</FrameLayout>

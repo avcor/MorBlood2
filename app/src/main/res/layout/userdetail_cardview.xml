@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp"
+    android:background="@color/transparent"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/transparent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imageGender"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_gravity="center"
+                android:transitionName="recyclerImage_Transition"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/transparent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/usernameCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="name goes here"
+                    android:background="#00FFFFFF"/>
+                <TextView
+                    android:id="@+id/userageCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="age goes here"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:id="@+id/usergenderCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="gender goes here"
+                    android:background="@android:color/transparent"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/userbloodGrpCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="bloodGrp"
+                    android:background="@android:color/transparent"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/usercityCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="city"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:id="@+id/userdistrictCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="district"/>
+                <TextView
+                    android:id="@+id/timestamp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="timestamp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

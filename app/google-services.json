@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "782894226101",
+    "firebase_url": "https://plasma-blood.firebaseio.com",
+    "project_id": "plasma-blood",
+    "storage_bucket": "plasma-blood.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782894226101:android:ee0da151bb4f2339ed7cfc",
+        "android_client_info": {
+          "package_name": "com.example.plasmablood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782894226101-l9g8bvrp530o5134l9r8aifik884g6rb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.plasmablood",
+            "certificate_hash": "1512ca4c5023e9423618b1184539f967466e31a5"
+          }
+        },
+        {
+          "client_id": "782894226101-ulo6hl37h00gn9oqge56l04ks4qphr2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeHMB-JnWVbis-BDnr0HMwH1NRnDoRngg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "782894226101-ulo6hl37h00gn9oqge56l04ks4qphr2m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782894226101:android:7af8d5c5695ac0aaed7cfc",
+        "android_client_info": {
+          "package_name": "com.example.plasmaboold11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782894226101-lr2h8brbt1a266obekr9o6navco531a5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.plasmaboold11",
+            "certificate_hash": "1512ca4c5023e9423618b1184539f967466e31a5"
+          }
+        },
+        {
+          "client_id": "782894226101-ulo6hl37h00gn9oqge56l04ks4qphr2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeHMB-JnWVbis-BDnr0HMwH1NRnDoRngg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "782894226101-ulo6hl37h00gn9oqge56l04ks4qphr2m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782894226101:android:aba58051def9f382ed7cfc",
+        "android_client_info": {
+          "package_name": "com.unisparc.morblood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782894226101-d3vnske3kcpq9n254fsrroglto9ikvnc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unisparc.morblood",
+            "certificate_hash": "261e0cb9b6bcefe4baa0dbe0ada2d9fc0715da29"
+          }
+        },
+        {
+          "client_id": "782894226101-ulo6hl37h00gn9oqge56l04ks4qphr2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeHMB-JnWVbis-BDnr0HMwH1NRnDoRngg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "782894226101-ulo6hl37h00gn9oqge56l04ks4qphr2m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

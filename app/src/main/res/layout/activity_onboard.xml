@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Onboard"
+    android:background="@color/BloodRed"
+    >
+
+    <TextView
+        android:id="@+id/plasma_blood_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lato"
+        android:text="MOR BLOOD"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="25dp"
+        android:visibility="gone"
+        />
+
+
+    <ImageView
+        android:id="@+id/search_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_round"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:elevation="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="221dp"
+        android:layout_height="40dp"
+
+        android:layout_above="@+id/textview3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="51dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Mor Blood"
+        android:textColor="#FFFFFE"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/r_u_option"
+        android:layout_marginBottom="70dp"
+        android:gravity="center"
+        android:text="THE GATEWAY OF MAKING NEW BLOOD RELATIONS"
+        android:textColor="#fff"
+        android:textSize="16dp" />
+
+    <RelativeLayout
+        android:id="@+id/r_u_option"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp">
+
+        <Button
+            android:id="@+id/recipient_butt"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/merriweather_sans"
+            android:text="Recipient"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/recipient_butt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7dp"
+            android:text="or"
+            android:textColor="@color/White"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/donor_butt"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/or"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/merriweather_sans"
+            android:text="Donor"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/donor_butt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:fontFamily="@font/merriweather_light"
+            android:text="Are you"
+            android:textColor="@color/White"
+            android:textSize="45dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/form_fill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:background="@drawable/top_round_corner"
+            android:visibility="visible"
+            android:clickable="true">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/black"
+            android:text="Enter details"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/merriweather_light"
+            />
+        <EditText
+            android:id="@+id/name_edt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="NAME : "
+            android:inputType="text"
+            android:textColorHint="@color/black"
+            android:textSize="15dp"
+            android:fontFamily="@font/merriweather_light"
+            android:background="@drawable/all_side_corner"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:paddingLeft="15dp"/>
+
+
+
+
+        <EditText
+            android:id="@+id/mob_edt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="CONTACT : "
+            android:textSize="15dp"
+            android:inputType="number"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/merriweather_light"
+            android:background="@drawable/all_side_corner"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:paddingLeft="15dp"
+            android:maxLength="10"/>
+
+        <AutoCompleteTextView
+            android:completionThreshold="0"
+            android:hint="GENDER : "
+            android:inputType="text"
+            android:textSize="15dp"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/merriweather_light"
+            android:background="@drawable/all_side_corner"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/donor_gender"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:paddingLeft="15dp"/>
+        <AutoCompleteTextView
+            android:id="@+id/state_edt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="STATE : "
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:inputType="text"
+            android:textSize="15dp"
+            android:completionThreshold="0"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/merriweather_light"
+            android:background="@drawable/all_side_corner"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:paddingLeft="15dp"/>
+
+
+        <AutoCompleteTextView
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:inputType="text"
+            android:id="@+id/city_edt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="CITY : "
+            android:textSize="15dp"
+            android:completionThreshold="0"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/merriweather_light"
+            android:background="@drawable/all_side_corner"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:paddingLeft="15dp"/>
+
+        <AutoCompleteTextView
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:id="@+id/tehsil_edt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="TEHSIL : "
+            android:inputType="text"
+            android:textSize="15dp"
+            android:completionThreshold="0"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/merriweather_light"
+            android:background="@drawable/all_side_corner"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:paddingLeft="15dp"/>
+        <AutoCompleteTextView
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:id="@+id/BloodGroups_edt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="text"
+            android:hint="BLOOD GROUP : "
+            android:textSize="15dp"
+            android:completionThreshold="0"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/merriweather_light"
+            android:background="@drawable/all_side_corner"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:paddingLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="choose"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:fontFamily="@font/merriweather_light"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+        <Button
+            android:id="@+id/done_but"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button_background"
+            android:text="DONE"
+            android:fontFamily="@font/merriweather_sans"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="powered by UNISPARC"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:fontFamily="@font/merriweather_light"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/form_fill_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@drawable/top_round_corner"
+        android:visibility="gone"
+        android:clickable="true">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/black"
+            android:text="Enter details"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/merriweather_light"
+            />
+        <EditText
+            android:id="@+id/name_edt_rec"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="NAME : "
+            android:textColorHint="@color/black"
+            android:textSize="15dp"
+            android:fontFamily="@font/merriweather_light"
+            android:background="@drawable/all_side_corner"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:paddingLeft="15dp"/>
+
+
+
+
+        <EditText
+            android:id="@+id/mob_edt_rec"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="CONTACT : "
+            android:textSize="15dp"
+            android:inputType="number"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/merriweather_light"
+            android:background="@drawable/all_side_corner"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:paddingLeft="15dp"/>
+                <AutoCompleteTextView
+                    android:completionThreshold="0"
+                    android:hint="GENDER : "
+                    android:inputType="text"
+                    android:textSize="15dp"
+                    android:textColorHint="@color/black"
+                    android:fontFamily="@font/merriweather_light"
+                    android:background="@drawable/all_side_corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/rec_gender"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="50dp"
+                    android:paddingLeft="15dp"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/state_edt_rec"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="STATE : "
+            android:textSize="15dp"
+            android:completionThreshold="0"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/merriweather_light"
+            android:background="@drawable/all_side_corner"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:paddingLeft="15dp"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/city_edt_rec"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="CITY : "
+            android:textSize="15dp"
+            android:completionThreshold="0"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/merriweather_light"
+            android:background="@drawable/all_side_corner"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:paddingLeft="15dp"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/tehsil_edt_rec"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="TEHSIL : "
+            android:textSize="15dp"
+            android:completionThreshold="0"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/merriweather_light"
+            android:background="@drawable/all_side_corner"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:paddingLeft="15dp"/>
+
+
+
+
+
+
+        <Button
+            android:id="@+id/done_butt_reciever"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button_background"
+            android:text="DONE"
+            android:fontFamily="@font/merriweather_sans"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="powered by UNISPARC"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:fontFamily="@font/merriweather_light"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+            </LinearLayout>
+
+</RelativeLayout>
