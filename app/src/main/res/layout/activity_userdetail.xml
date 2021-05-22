@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.DonordetailActivity"
+    android:background="@drawable/main_bg"
     android:orientation="vertical">
 
     <com.mikhaellopez.circularimageview.CircularImageView
@@ -17,40 +18,50 @@
         android:layout_margin="20dp"/>
 
     <androidx.cardview.widget.CardView
+        app:cardCornerRadius="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp">
         <LinearLayout
+            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
             <TextView
+                android:background="@drawable/all_side_corner"
+                android:padding="5dp"
                 android:id="@+id/name_UserDetail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="name"
+                android:text="Name"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 />
             <TextView
+                android:background="@drawable/all_side_corner"
+                android:padding="5dp"
                 android:id="@+id/bloodGrp_UserDetail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Blood Grp"
+                android:text="Blood Group"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 />
             <TextView
+                android:background="@drawable/all_side_corner"
+                android:padding="5dp"
                 android:id="@+id/age_UserDetail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                android:text="age"/>
+                android:text="Age"/>
             <TextView
+                android:background="@drawable/all_side_corner"
+                android:padding="5dp"
                 android:id="@+id/gender_UserDetail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -59,6 +70,8 @@
                 android:layout_marginEnd="10dp"
                 android:text="Gender"/>
             <TextView
+                android:background="@drawable/all_side_corner"
+                android:padding="5dp"
                 android:id="@+id/state_UserDetail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -68,6 +81,8 @@
                 android:text="State"
                 android:visibility="gone"/>
             <TextView
+                android:background="@drawable/all_side_corner"
+                android:padding="5dp"
                 android:id="@+id/city_UserDetail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -76,6 +91,8 @@
                 android:layout_marginEnd="10dp"
                 android:text="City"/>
             <TextView
+                android:background="@drawable/all_side_corner"
+                android:padding="5dp"
                 android:id="@+id/district_UserDetail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -84,6 +101,8 @@
                 android:layout_marginEnd="10dp"
                 android:text="District"/>
             <TextView
+                android:background="@drawable/all_side_corner"
+                android:padding="5dp"
                 android:id="@+id/pincode_UserDetail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -100,6 +119,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="request"
+        android:layout_margin="30dp"
+        android:background="@drawable/button_bg"
         android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>

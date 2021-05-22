@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="contact_round_width">1.5dp</dimen>
+    <dimen name="contact_round_gap">1.5dp</dimen>
+    <dimen name="contact_image_margin_top">30dp</dimen>
+    <dimen name="card_round_radius">10dp</dimen>
+    <dimen name="grid_spacing">10dp</dimen>
+    <dimen name="grid_spacing_half">5dp</dimen>
+    <dimen name="elder_mode_text_size">20dp</dimen>
+    <dimen name="elder_mode_min_height">56dp</dimen>
+    <dimen name="elder_fragment_margin">10dp</dimen>
+    <dimen name="action_bar_height">56dp</dimen>
+    <dimen name="add_contact_thumbnail_size">56dp</dimen>
+    <dimen name="elder_item_elevation">0dp</dimen>
+    <dimen name="camera_fab_layout_height">90dp</dimen>
+    <dimen name="app_list_item_min_height">72dp</dimen>
+    <dimen name="custom_button_icon_size">40dp</dimen>
+    <dimen name="custom_button_padding">5dp</dimen>
+    <dimen name="custom_icon_button_height">54dp</dimen>
+    <dimen name="conversation_list_item_height">100dp</dimen>
+    <dimen name="primary_text_size_elder">24sp</dimen>
+    <dimen name="secondary_text_size_elder">20sp</dimen>
+    <dimen name="small_text_size_elder">16sp</dimen>
+    <dimen name="large_text_size_elder">28sp</dimen>
+    <dimen name="extra_large_elder_text_size">30sp</dimen>
+    <dimen name="button_size">56dp</dimen>
+</resources>

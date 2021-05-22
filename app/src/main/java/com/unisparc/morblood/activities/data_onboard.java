@@ -23,6 +23,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
@@ -51,9 +52,10 @@ import java.util.Objects;
 
 public class data_onboard extends AppCompatActivity implements LocationListener{
 
-    Button button_donor, button_recipient, done_button;
+    ImageButton button_donor, button_recipient;
+    Button done_button;
     EditText name_edt, age_edt;
-    TextView address_tv;
+    TextView address_tv,recieverButText,donorButText;
     ProgressBar addressProgress;
 
     LinearLayout formFill, donorOptions_ll;
@@ -64,7 +66,7 @@ public class data_onboard extends AppCompatActivity implements LocationListener{
     Double latitude, longitude;
 
     Spinner spinner_bld;
-    String[] bloog_grp = {"click here","A+", "A-", "AB+", "AB-", "B+", "B-", "O-", "O+"};
+    String[] bloog_grp = {"Click here","A+", "A-", "AB+", "AB-", "B+", "B-", "O-", "O+"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,6 +86,10 @@ public class data_onboard extends AppCompatActivity implements LocationListener{
             @Override
             public void onClick(View view) {
                 // open form
+                button_donor.setVisibility(View.GONE);
+                donorButText.setVisibility(View.GONE);
+                recieverButText.setVisibility(View.VISIBLE);
+                button_recipient.setVisibility(View.VISIBLE);
                 formFill.setVisibility(View.VISIBLE);
                 donorOptions_ll.setVisibility(View.VISIBLE);
 //                ArrayAdapter arrayAdapter = new ArrayAdapter(data_onboard.this,android.R.layout.simple_spinner_item,bloog_grp);
@@ -96,6 +102,10 @@ public class data_onboard extends AppCompatActivity implements LocationListener{
             }
         });
         button_recipient.setOnClickListener(view -> {
+            button_recipient.setVisibility(View.GONE);
+            recieverButText.setVisibility(View.GONE);
+            donorButText.setVisibility(View.VISIBLE);
+            button_donor.setVisibility(View.VISIBLE);
             formFill.setVisibility(View.VISIBLE);
             donorOptions_ll.setVisibility(View.GONE);
         });
@@ -345,6 +355,8 @@ public class data_onboard extends AppCompatActivity implements LocationListener{
         button_recipient = findViewById(R.id.recipient_but);
         done_button = findViewById(R.id.done_but);
         address_tv = findViewById(R.id.address_text);
+        recieverButText = findViewById(R.id.textRecieve);
+        donorButText = findViewById(R.id.textDonor);
 
         name_edt = findViewById(R.id.name_edt);
         age_edt = findViewById(R.id.age_edt);

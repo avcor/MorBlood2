@@ -106,7 +106,7 @@ public class DonorFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Log.d(TAG, "onCreate: " + FirebaseAuth.getInstance().getCurrentUser().getUid());
+        //Log.d(TAG, "onCreate: " + FirebaseAuth.getInstance().getCurrentUser().getUid());
         user = FirebaseAuth.getInstance().getCurrentUser();
     }
 
